@@ -1,12 +1,3 @@
-//Code to print star pattern.
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("*");
-        System.out.println("**");
-        System.out.println("***");
-        System.out.println("****");
-    }
-}
 //Code to input radius of the circle and print area of the circle.
 
 import java.util.*;
