@@ -27,7 +27,7 @@ public class Main {
         int ans= 0; // answer in decimal
         int pw=1; // power of 10
         while (decimal_num > 0){
-            int unit_digit = decimal_num % 2;
+            int unit_digit = decimal_num % 2; //parity:- it is term used to describe n%2
             ans+= (unit_digit * pw);
             decimal_num = decimal_num/2;
             pw*=10;
