@@ -22,6 +22,7 @@ public class Main {
         }
     }
 }
+
 // Code to print hollow rectangle pattern
 public class Main {
     public static void main(String[] args) {
@@ -37,6 +38,72 @@ public class Main {
                 }
             }
             System.out.println("\n");
+        }
+    }
+    
+// Code to print a diagnol line
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=i; j++){
+                if(j>=i) {
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("\n");
+        }
+    }
+}
+    
+}
+
+// Code to print half pyramid
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+    }
+}
+
+// Code to print inverted half pyramid
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        for(int i=n; i>=1; i--){
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+    }
+}
+
+// Code to print a half pyramid(mirror image)
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int n = 5;
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=n-i; j++)
+            {
+                System.out.print(" ");
+            }
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.print("\n");
         }
     }
 }
