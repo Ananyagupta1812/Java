@@ -4,14 +4,53 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter any number:");
         int num = sc.nextInt();
-        int ans= 0;
-        int m=0;
+        int ans= 0,m=0;
+        //evaluation of reverse of digits
         while(num>0){
             m=num%10;
             ans=(ans*10)+m;
             num=num/10;
         }
+        System.out.print("Reversed number is:");
         System.out.print(ans);
+    }
+}
+
+// Code to check it is an Armstrong number or not
+import java.util.Scanner;
+import java.lang.Math;
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter any number:-");
+        int num = sc.nextInt();
+        int ans= 0,count=0,m,number1,temp,s;
+        number1=num;
+        temp=num;
+        //evaluation of number of digits
+        while(num>0){
+            num=num/10;
+            count++;
+        }
+        System.out.print("Number of digits are:");
+        System.out.println(count);
+        //evaluation of sum of digits
+        while(number1>0){
+            m=number1%10;
+            s=m;
+            ans=(int)Math.pow(s,count) +ans;
+            number1=number1/10;
+        }
+        System.out.print("Armstrong sum of digits is:");
+        System.out.println(ans);
+        if(ans==temp) {
+            System.out.println("The number is an Armstrong number");
+        }
+        else{
+            System.out.println("The number is not an Armstrong number");
+        }
     }
 }
