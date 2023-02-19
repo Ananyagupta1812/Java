@@ -1,4 +1,4 @@
-// Code to reverse a string
+// Code to reverse a number
 import java.util.Scanner;
 import java.util.*;
 public class Main {
@@ -18,7 +18,7 @@ public class Main {
     }
 }
 
-// Code to check it is an Armstrong number or not
+// Code to check whether a number is an Armstrong number or not
 import java.util.Scanner;
 import java.lang.Math;
 import java.util.*;
@@ -54,3 +54,5 @@ public class Main {
         }
     }
 }
+
+
