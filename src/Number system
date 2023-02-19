@@ -108,3 +108,25 @@ public class Main {
         }
     }
 }
+
+// Code to find the sum of digits
+import java.util.Scanner;
+import java.lang.Math;
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter any number:-");
+        int num = sc.nextInt();
+        int number1,m,ans=0;
+        number1=num;
+        //evaluating sum of digits
+        while(num>0){
+            m=num%10;
+            ans=ans+m;
+            num=num/10;
+        }
+        System.out.print("The sum of digits is:");
+        System.out.println(ans);
+    }
+}
