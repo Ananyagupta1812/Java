@@ -1,0 +1,31 @@
+// Code to find the prime factors of a given number
+import java.util.Scanner;
+import java.lang.Math;
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter any number:-");
+        int num = sc.nextInt();
+        int i;
+        //check if a number is prime or not
+        if(num%2==0) {
+            System.out.println("The prime factors of given number are:-");
+            //evaluate the prime factors
+            for (i = 2; i <= Math.sqrt(num); i++) {
+                while (num % i == 0) {
+                    num = num / i;
+                }
+                System.out.print(i + ",");
+            }
+            if (num > 2) {
+                System.out.print(i+ ".");
+            }
+        }
+        else{
+            System.out.println("Prime number");
+            System.out.println("The factors are:");
+            System.out.println(1+","+num);
+        }
+    }
+}
