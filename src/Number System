@@ -1,0 +1,23 @@
+// Code to add two numbers using methods.
+import java.lang.Math;
+import java.util.Scanner;
+import java.util.*;
+class Algebra{
+    int add(int a, int b){
+        int ans=a+b;
+        return ans;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Algebra sum=new Algebra();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter first number:-");
+        int x= sc.nextInt();
+        System.out.println("Enter second number:-");
+        int y= sc.nextInt();
+        System.out.println("The sum of number is:-");
+        int ans= sum.add(x,y);
+        System.out.print(ans);
+    }
+}
